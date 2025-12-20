@@ -1,0 +1,15 @@
+/home/kits/practise_workspace/install/swarm_robot_description/share/ament_index/resource_index/package_run_dependencies/swarm_robot_description
+/home/kits/practise_workspace/install/swarm_robot_description/share/ament_index/resource_index/parent_prefix_path/swarm_robot_description
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/environment/ament_prefix_path.sh
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/environment/ament_prefix_path.dsv
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/environment/path.sh
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/environment/path.dsv
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/local_setup.bash
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/local_setup.sh
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/local_setup.zsh
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/local_setup.dsv
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/package.dsv
+/home/kits/practise_workspace/install/swarm_robot_description/share/ament_index/resource_index/packages/swarm_robot_description
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/cmake/swarm_robot_descriptionConfig.cmake
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/cmake/swarm_robot_descriptionConfig-version.cmake
+/home/kits/practise_workspace/install/swarm_robot_description/share/swarm_robot_description/package.xml
