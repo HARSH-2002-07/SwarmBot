@@ -14,3 +14,5 @@ swarm_robot_gazebo/__init__.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+worlds/room.sdf
+worlds/warehouse.sdf

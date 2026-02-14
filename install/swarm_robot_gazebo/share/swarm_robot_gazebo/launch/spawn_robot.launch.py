@@ -23,11 +23,18 @@ def generate_launch_description():
         value=install_dir
     )
 
+    # 1. Find the package where the world file lives
+    pkg_gazebo = get_package_share_directory('swarm_robot_gazebo')
+
+    # 2. Construct the path
+    world_file = os.path.join(pkg_gazebo, 'worlds', 'warehouse.sdf')
+
+# Update the launch argument to use that file
     start_gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
-        launch_arguments={'gz_args': '-r empty.sdf'}.items()
+        launch_arguments={'gz_args': ['-r ', world_file]}.items()
     )
 
     # 2. SPAWN ROBOT

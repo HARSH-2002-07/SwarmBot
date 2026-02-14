@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="warehouse_world">
+    
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="libignition-gazebo-physics-system.so" name="ignition::gazebo::systems::Physics"></plugin>
+    <plugin filename="libignition-gazebo-user-commands-system.so" name="ignition::gazebo::systems::UserCommands"></plugin>
+    <plugin filename="libignition-gazebo-scene-broadcaster-system.so" name="ignition::gazebo::systems::SceneBroadcaster"></plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision"><geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry></collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outer_walls">
+      <static>true</static>
+      <link name="link">
+        <visual name="v1"><pose>0 7.5 0.5 0 0 0</pose><geometry><box><size>15.2 0.2 1</size></box></geometry></visual>
+        <collision name="c1"><pose>0 7.5 0.5 0 0 0</pose><geometry><box><size>15.2 0.2 1</size></box></geometry></collision>
+
+        <visual name="v2"><pose>0 -7.5 0.5 0 0 0</pose><geometry><box><size>15.2 0.2 1</size></box></geometry></visual>
+        <collision name="c2"><pose>0 -7.5 0.5 0 0 0</pose><geometry><box><size>15.2 0.2 1</size></box></geometry></collision>
+
+        <visual name="v3"><pose>7.5 0 0.5 0 0 0</pose><geometry><box><size>0.2 15.2 1</size></box></geometry></visual>
+        <collision name="c3"><pose>7.5 0 0.5 0 0 0</pose><geometry><box><size>0.2 15.2 1</size></box></geometry></collision>
+
+        <visual name="v4"><pose>-7.5 0 0.5 0 0 0</pose><geometry><box><size>0.2 15.2 1</size></box></geometry></visual>
+        <collision name="c4"><pose>-7.5 0 0.5 0 0 0</pose><geometry><box><size>0.2 15.2 1</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name="room_a_wall">
+      <static>true</static>
+      <pose>-3.5 3.5 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="v"><geometry><box><size>7.8 0.2 1</size></box></geometry><material><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name="c"><geometry><box><size>7.8 0.2 1</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name="room_b_wall">
+      <static>true</static>
+      <pose>3.5 -3.5 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="v"><geometry><box><size>7.8 0.2 1</size></box></geometry><material><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+        <collision name="c"><geometry><box><size>7.8 0.2 1</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name="center_pillar">
+      <static>true</static>
+      <pose>1 0 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="v"><geometry><cylinder><radius>0.5</radius><length>1</length></cylinder></geometry><material><diffuse>0.1 0.1 0.1 1</diffuse></material></visual>
+        <collision name="c"><geometry><cylinder><radius>0.5</radius><length>1</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+    <model name="obstacle_1">
+      <static>true</static>
+      <pose>4 4 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="v"><geometry><box><size>1 1 1</size></box></geometry></visual>
+        <collision name="c"><geometry><box><size>1 1 1</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name="obstacle_2">
+      <static>true</static>
+      <pose>-4 -4 0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="v"><geometry><cylinder><radius>0.3</radius><length>1</length></cylinder></geometry></visual>
+        <collision name="c"><geometry><cylinder><radius>0.3</radius><length>1</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>
