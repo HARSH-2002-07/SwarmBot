@@ -29,9 +29,20 @@ ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True map:=/home/kits/pr
 
 ###remembeer global frame should be map in order to do 2d estimate position
 
+ros2 run ros_gz_bridge parameter_bridge   /cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist   /scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan   /odom@nav_msgs/msg/Odometry@ignition.msgs.Odometry   /tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V   /joint_states@sensor_msgs/msg/JointState@ignition.msgs.Model
+
 
 okay so if you see error no map in rviz choose map topic map 
 and expand the topic you will see durability policy change it to volatile
 what it does is load the last map 
 and then you can run the python scripts in bringup folder to automatically  navigate the robot to multiple positons one by one
 
+
+
+ros2 run ros_gz_bridge parameter_bridge \
+  /model/bot1/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist \
+  /model/bot1/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan \
+  /model/bot1/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry \
+  /model/bot2/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist \
+  /model/bot2/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan \
+  /model/bot2/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry

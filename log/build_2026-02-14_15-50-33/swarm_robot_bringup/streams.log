@@ -1,0 +1,20 @@
+[0.568s] Invoking command in '/home/kits/practise_workspace/src/swarm_robot_bringup': PYTHONPATH=/home/kits/practise_workspace/build/swarm_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kits/practise_workspace/install/swarm_robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/swarm_robot_bringup build --build-base /home/kits/practise_workspace/build/swarm_robot_bringup/build install --record /home/kits/practise_workspace/build/swarm_robot_bringup/install.log --single-version-externally-managed install_data
+[0.709s] running egg_info
+[0.709s] writing ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/PKG-INFO
+[0.709s] writing dependency_links to ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/dependency_links.txt
+[0.709s] writing entry points to ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/entry_points.txt
+[0.709s] writing requirements to ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/requires.txt
+[0.709s] writing top-level names to ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/top_level.txt
+[0.710s] reading manifest file '../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/SOURCES.txt'
+[0.710s] writing manifest file '../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info/SOURCES.txt'
+[0.711s] running build
+[0.711s] running build_py
+[0.711s] running install
+[0.711s] running install_lib
+[0.711s] running install_data
+[0.712s] running install_egg_info
+[0.712s] removing '/home/kits/practise_workspace/install/swarm_robot_bringup/lib/python3.10/site-packages/swarm_robot_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[0.713s] Copying ../../build/swarm_robot_bringup/swarm_robot_bringup.egg-info to /home/kits/practise_workspace/install/swarm_robot_bringup/lib/python3.10/site-packages/swarm_robot_bringup-0.0.0-py3.10.egg-info
+[0.713s] running install_scripts
+[0.726s] writing list of installed files to '/home/kits/practise_workspace/build/swarm_robot_bringup/install.log'
+[0.745s] Invoked command in '/home/kits/practise_workspace/src/swarm_robot_bringup' returned '0': PYTHONPATH=/home/kits/practise_workspace/build/swarm_robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kits/practise_workspace/install/swarm_robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/swarm_robot_bringup build --build-base /home/kits/practise_workspace/build/swarm_robot_bringup/build install --record /home/kits/practise_workspace/build/swarm_robot_bringup/install.log --single-version-externally-managed install_data
